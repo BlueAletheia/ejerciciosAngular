@@ -1,0 +1,29 @@
+button:hover{
+    background-color: #07f;
+}
+
+button:focus{
+    outline: none;
+}
+
+.p-1 {
+    padding: 1px;
+}
+
+.row{
+    display: flex;
+}
+
+h1{
+    font-family: helvetica;
+}
+
+.col{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+imput{
+    display: block;
+    margin: 5px;
+}
