@@ -17,7 +17,6 @@ export class AgregarComponent {
     if (this.nuevo.nombre.trim().length === 0) {
       return;
     }
-    console.log(this.nuevo);
     this.onNuevoPersonaje.emit(this.nuevo);
 
     this.nuevo = {
