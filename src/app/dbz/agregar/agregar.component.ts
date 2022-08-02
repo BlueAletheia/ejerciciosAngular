@@ -6,16 +6,11 @@ import { Personaje } from '../interfaces/dbz.interface';
   templateUrl: './agregar.component.html',
 })
 export class AgregarComponent {
-  // @Input() personajes: Personaje[] = [];
-
   @Input() nuevo: Personaje = {
     nombre: '',
     poder: 0,
   };
 
-  // cambiarNombre(event: any) {
-  //   console.log(event.target.value);
-  // }
   @Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter();
 
   agregar() {
@@ -25,7 +20,6 @@ export class AgregarComponent {
     console.log(this.nuevo);
     this.onNuevoPersonaje.emit(this.nuevo);
 
-    //this.personajes.push(this.nuevo);
     this.nuevo = {
       nombre: '',
       poder: 0,
